@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppBottomSheetDialogTheme"
+    >
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        />
+    <TextView
+        android:id="@+id/tvNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD HÓA ĐƠN CHI TIẾT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp" />
+
+
+    <EditText
+        android:id="@+id/edt_mahoadon"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000"
+        android:hint="Mã Hóa Đơn"
+        android:textColorHint="#000"
+        android:layout_height="50dp"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/edt_mahdct"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Mã HĐCT"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tx_theloai"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+           android:textColor="#000"
+            android:textSize="20dp"
+            android:paddingTop="2dp"
+            android:text="Sách" />
+
+        <Spinner
+            android:id="@+id/sp_theloai"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edt_slm"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:hint="Số Lượng Mua"
+        android:inputType="phone"
+        android:textColorHint="#000"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnaddlist"
+            android:text="Add List"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@drawable/btnbogoc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Thanh Toán"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btnbogoc"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnaddhdct"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvhdct"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <TextView
+        android:id="@+id/txtthanhtien"
+        android:textColor="#000"
+        android:text="Tổng Tiền:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

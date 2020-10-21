@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:icon="@drawable/ic_dashboard_black"
+            android:iconTint="#000"
+            android:title="HOME">
+        </item>
+        <item android:id="@+id/sach"
+            android:icon="@drawable/icons8_book_26px_1"
+            android:iconTint="#000"
+            android:title="BOOK">
+        </item>
+        <item android:id="@+id/theloai"
+            android:icon="@drawable/icons8_book_stack"
+            android:iconTint="#000"
+            android:title="CATEGORY">
+        </item>
+        <item android:id="@+id/hoadon"
+            android:icon="@drawable/icons8_bill_24px"
+            android:iconTint="#000"
+            android:title="BILL">
+        </item>
+        <item android:id="@+id/topbook"
+            android:icon="@drawable/icontranin"
+            android:iconTint="#000"
+            android:title="BEST SELLING BOOk">
+        </item>
+        <item android:id="@+id/statistical"
+            android:icon="@drawable/icons8_statistics_26px_1"
+            android:iconTint="#000"
+            android:title="STATISTICAL">
+        </item>
+    </group>
+    <item android:title="Profile" android:titleCondensed="#000">
+        <menu><group android:checkableBehavior="single">
+            <item android:id="@+id/user"
+                android:icon="@drawable/iconuser"
+                android:iconTint="#000"
+                android:title="User">
+            </item>
+            <item android:id="@+id/changepassword"
+                android:icon="@drawable/icons8_unlock_26px"
+                android:iconTint="#000"
+                android:title="Change PassWord">
+            </item>
+            <item android:id="@+id/logout"
+                android:icon="@drawable/icons8_shutdown"
+                android:iconTint="#000"
+                android:title="Logout">
+            </item>
+            <item android:id="@+id/exit"
+                android:icon="@drawable/icons8_exit"
+                android:iconTint="#000"
+                android:title="EXIT">
+            </item>
+
+        </group>
+        </menu>
+
+
+    </item>
+</menu>
